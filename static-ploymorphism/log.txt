@@ -1,0 +1,7 @@
+In file included from main.cpp:3:0:
+BigClass.h: In instantiation of ‘Glue<T1, T2>::Glue(const T1&, const T2&) [with T1 = Glue<BigClass, BigClass>; T2 = BigClass]’:
+BigClass.h:106:9:   required from ‘const Glue<T1, T2> operator+(const Base<T1>&, const Base<T2>&) [with T1 = Glue<BigClass, BigClass>; T2 = BigClass]’
+main.cpp:13:21:   required from here
+BigClass.h:65:8: error: invalid initialization of reference of type ‘const Glue<BigClass, BigClass>&’ from expression of type ‘const BigClass’
+  , b(_b)
+        ^
